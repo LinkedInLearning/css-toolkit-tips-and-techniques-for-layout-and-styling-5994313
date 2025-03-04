@@ -4,8 +4,8 @@
   "editor.fontFamily": "ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono', 'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro', 'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace",
   "editor.fontLigatures": false,
   "editor.fontSize": 22,
-  "editor.formatOnPaste": true,
-  "editor.formatOnSave": true,
+  "editor.formatOnPaste": false,
+  "editor.formatOnSave": false,
   "editor.lineNumbers": "on",
   "editor.matchBrackets": "always",
   "editor.minimap.enabled": false,
@@ -21,7 +21,7 @@
   "workbench.fontAliasing": "antialiased",
   "workbench.statusBar.visible": true,
   "liveServer.settings.root": "/docs",
-  "prettier.enable": true,
+  "prettier.enable": false,
   "eslint.alwaysShowStatus": false,
   "liveServer.settings.donotVerifyTags": true
 }

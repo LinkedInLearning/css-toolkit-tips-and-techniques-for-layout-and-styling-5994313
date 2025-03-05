@@ -1,0 +1,13 @@
+.demo-area {
+  inline-size: 50ch;
+  margin: 0 auto;
+}
+
+blockquote {
+  border-inline-start: 1rem solid black;
+  inline-size: 40ch;
+  margin-inline-start: 2rem;
+  margin-inline-end: 0;
+  padding-inline-start: 1.5rem;
+  writing-mode: vertical-lr;
+}

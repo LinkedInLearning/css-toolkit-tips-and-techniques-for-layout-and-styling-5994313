@@ -1,0 +1,14 @@
+.demo-area {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.demo-area p {
+  background: lightgray;
+  width: 50ch;
+
+  &:nth-of-type(2) {
+  }
+}

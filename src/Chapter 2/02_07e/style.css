@@ -4,11 +4,11 @@
 }
 
 .square {
-  width: 50%;
-  margin-inline-end: 1rem;
   aspect-ratio: 1/1;
+  float: left;
+  margin-inline-end: 1rem;
   object-fit: cover;
-  float: right;
+  width: 50%;
 }
 
 .demo-area h2 {

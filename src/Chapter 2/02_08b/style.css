@@ -1,0 +1,10 @@
+.demo-area {
+  margin: 2rem auto;
+  max-inline-size: 50ch;
+}
+
+.shape {
+  clip-path: circle();
+  float: left;
+  max-inline-size: 40%;
+}

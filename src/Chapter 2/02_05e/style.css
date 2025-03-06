@@ -1,0 +1,16 @@
+.demo-area {
+  /* align-items: center; */
+  background: hsl(0, 0%, 75%);
+  block-size: 65vh;
+  display: grid;
+  inline-size: 65vw;
+  /* justify-content: center; */
+  margin: 0 auto  
+}
+
+.center {
+  align-self: center;
+  border: 5px solid black;
+  justify-self: center;
+  padding: 1rem;
+}

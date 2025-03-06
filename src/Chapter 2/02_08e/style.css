@@ -1,12 +1,16 @@
 .demo-area {
-  margin: 2rem auto;
-  max-inline-size: 50ch;
+  margin: 0 auto;
+  max-width: 70ch;
 }
 
-.shape {
-  clip-path: circle();
+.square {
+  aspect-ratio: 1/1;
   float: left;
-  margin-inline-end: 4rem;
-  max-inline-size: 40%;
-  shape-outside: circle();
+  margin-inline-end: 1rem;
+  object-fit: cover;
+  width: 50%;
+}
+
+.demo-area h2 {
+  clear: both;
 }

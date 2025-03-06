@@ -4,35 +4,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Text-wrapping with float and clear</title>
+  <title>Aspect ratio boxes</title>
   <link href="../../assets/base.css" rel="stylesheet" />
   <link href="style.css" rel="stylesheet" />
 </head>
 
 <body>
   <header class="masthead">
-    <h1 class="pagetitle">Text-wrapping with float and clear</h1>
+    <h1 class="pagetitle">Aspect ratio boxes</h1>
   </header>
   <main class="demo-area">
-        <img class="square" src="../../assets/sun-over-mountains.webp"
-          alt="Silhouetted mountains under a warm, golden sky at sunset." loading="lazy" />
-    <p>Now that we have Flexbox and Grid, you may wonder if float and clear are still relevant. The answer is yes! But now, we
-    get to use them as they were originally intended – for things like text-wrapping, and not as a hacky workaround for
-    layouts.</p>
-    <h2>Control with clear</h2>
-    <p>The float property allows an element—like this image—to be positioned to the left or right inside its parent container.
-    It removes the element from the normal document flow, letting surrounding content wrap around it. This is similar to
-    "text wrap" in a word processor. For example, if I change this image to float: right, you’ll see the image move to the
-    right, and the text automatically fills the space to its left.</p>
-    <p>Once an item is floated, we need to control how adjacent elements behave. Should they wrap around it, or should they
-    move below it? That’s where the clear property comes in.</p>
-    <p>Back in the days of float-based layouts, we used clear a lot to prevent container collapse, which led to some confusion
-    about how it actually works. Let’s clear that up. See what I did there?</p>
-    <p>If you apply clear: right to an item, you are saying “nothing can appear - or float - to the right of this item”
-      and adjacent siblings are literally cleared away from the space.</p>
-    <p>Clear left prevents adjacent siblings from appearing on the left, clear right on the right, and clear both clears
-      both sides.</p>
-
+    <div class="widescreen">A "widescreen" 16x9 box</div>
+    <img class="square" src="../../assets/sun-over-mountains.webp" alt="Silhouetted mountains under a warm, golden sky at sunset."
+      loading="lazy" />
   </main>
 </body>
 

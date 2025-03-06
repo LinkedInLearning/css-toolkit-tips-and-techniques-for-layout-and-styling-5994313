@@ -1,0 +1,26 @@
+.demo-area {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  background-color: hsl(0, 0%, 25%);
+  color: white;
+  max-inline-size: 50ch;
+  padding: 3rem;
+  position: relative;
+
+  &::before {
+    --size: 60px;
+    background-color: hotpink;
+    block-size: 50px;
+    clip-path: polygon(0% 0%, 100% 0, 100% 60%, 50% 100%, 0 60%);
+    content: "";
+    inline-size: 60px;
+    inset-block-start: 0;
+    inset-inline-start: 50%;
+    position: absolute;
+    translate: -50%;
+  }
+}

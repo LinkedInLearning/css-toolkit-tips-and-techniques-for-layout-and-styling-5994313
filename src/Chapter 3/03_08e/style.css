@@ -1,0 +1,15 @@
+.demo-area {
+  align-items: center;
+  display: flex;
+  font-size: 3rem;
+  font-weight: 700;
+  justify-content: center;
+}
+
+.gradient-text {
+  background: linear-gradient(45deg, red, blue);
+  /* background: url("../../assets/sun-over-mountains.webp"); */
+  background-clip: text;
+  -webkit-background-clip: text; /* Fallback for older browsers */
+  color: transparent;
+}

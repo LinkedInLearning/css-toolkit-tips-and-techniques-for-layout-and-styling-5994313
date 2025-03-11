@@ -1,0 +1,7 @@
+.demo-area {
+  align-items: center;
+  display: flex;
+  font-size: 3rem;
+  font-weight: 700;
+  justify-content: center;
+}

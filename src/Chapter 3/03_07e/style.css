@@ -1,0 +1,13 @@
+.demo-area {
+  margin: 0 auto;
+  padding: .25rem 1rem;
+  width: 70ch;
+}
+
+.demo-area p::selection {
+  background-color: hsl(329, 80%, 86%);
+}
+
+mark {
+  background-color: hsl(114, 80%, 86%);
+}

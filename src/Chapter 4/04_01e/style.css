@@ -1,0 +1,14 @@
+:root {
+  --default-line-width: 1px;
+  --large-line-width: 10px;
+  --primary-color: purple;
+}
+
+.demo-area {
+  border-width: var(--large-line-width, var(--default-line-width, 5px));
+  border-style: solid;
+  border-color: var(--primary-color);
+  margin: 0 auto;
+  padding: 1rem;
+  width: 70ch;
+}

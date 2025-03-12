@@ -3,6 +3,22 @@
   --card-padding: calc(var(--size-unit) * 2);
   --card-gap: calc(var(--size-unit) * 3);
   --card-radius: calc(var(--size-unit) * 0.5);
+  --background-color: white;
+  --font-color: black;
+  --primary-color: hsl(40, 40%, 35%);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color: black;
+    --font-color: white;
+    --primary-color: hsl(40, 90%, 65%);
+  }
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--font-color);
 }
 
 .demo-area {
@@ -15,9 +31,14 @@
 
 .card {
   border: 1px solid;
+  border-color: var(--primary-color);
   border-radius: var(--card-radius);
   padding: var(--card-padding);
   text-align: center;
+}
+
+.card h2 {
+  color: var(--primary-color);
 }
 
 .card img {

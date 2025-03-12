@@ -1,0 +1,38 @@
+:root {
+  --base-color: 260;
+  --color-dark:
+    hsl(var(--base-color), 85%, 30%);
+  --color-medium:
+    hsl(var(--base-color), 65%, 50%);
+  --color-light:
+    hsl(var(--base-color), 85%, 70%);
+}
+
+.demo-area {
+  margin: 0 auto;
+  width: 60ch;
+}
+
+.demo-area ul {
+  background-color: hsl(260, 100%, 50%);
+  display: flex;
+  gap: .5rem;
+}
+
+.demo-area li {
+  display: block;
+  width: calc(100% * 1/3);
+  height: 20rem;
+}
+
+.demo-area li:first-of-type {
+  background-color: var(--color-dark);
+}
+
+.demo-area li:nth-child(2) {
+  background-color: var(--color-medium);
+}
+
+.demo-area li:last-of-type {
+  background-color: var(--color-light);
+}

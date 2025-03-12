@@ -1,0 +1,27 @@
+:root {
+  --size-unit: 1rem;
+  --card-padding: calc(var(--size-unit) * 2);
+  --card-gap: calc(var(--size-unit) * 3);
+  --card-radius: calc(var(--size-unit) * 0.5);
+}
+
+.demo-area {
+  display: flex;
+  gap: var(--card-gap);
+  justify-content: center;
+  margin: 0 auto;
+  width: 80ch;
+}
+
+.card {
+  background: white;
+  border-radius: var(--card-radius);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  padding: var(--card-padding);
+  text-align: center;
+}
+
+.card img {
+  border-radius: var(--card-radius);
+  object-fit: cover;
+}

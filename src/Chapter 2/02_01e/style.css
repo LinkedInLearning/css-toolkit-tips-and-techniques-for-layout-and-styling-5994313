@@ -1,0 +1,25 @@
+body {
+  margin: 0;
+}
+
+figure {
+  margin: 0;
+}
+
+.demo-area {
+  margin: 0 auto;
+}
+
+.demo-area h2 {
+  background: hsl(205, 100%, 86%);
+  line-height: 2;
+  width: 100%;
+}
+
+.horizontal-img {
+  width: 100%;
+}
+
+figcaption {
+  padding: .5rem 1rem;
+}

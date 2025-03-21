@@ -7,7 +7,7 @@
 
 .demo-area {
   display: flex;
-  gap: var(--card-gap);
+  gap: var(--card-gap, 1rem);
   justify-content: center;
   margin: 0 auto;
   width: 80ch;
@@ -15,12 +15,12 @@
 
 .card {
   border: 1px solid;
-  border-radius: var(--card-radius);
-  padding: var(--card-padding);
+  border-radius: var(--card-radius, 1rem);
+  padding: var(--card-padding, 1rem);
   text-align: center;
 }
 
 .card img {
-  border-radius: var(--card-radius);
+  border-radius: var(--card-radius, 1rem);
   object-fit: cover;
 }

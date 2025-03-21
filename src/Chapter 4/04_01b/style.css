@@ -1,5 +1,5 @@
 :root {
-  --default-line-width: 5px;
+  --default-line-width: 1px;
   --large-line-width: 10px;
   --primary-color: purple;
 }
@@ -7,5 +7,5 @@
 .demo-area {
   margin: 0 auto;
   padding: 1rem;
-  width: 70ch;
+  width: 50ch;
 }

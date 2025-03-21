@@ -6,9 +6,9 @@
 .default {
   border: 1px solid hsl(0, 0%, 50%);
   box-sizing: border-box;
-  font-size: clamp(1rem, 3vw, 1.4rem);
+  font-size: clamp(1rem, 4vw, 1.4rem);
   margin-block-end: 1rem;
   padding: 0 1rem;
-  width: min(50ch, calc(100vw - 2rem));
+  width: min(35ch, calc(100vw - 2rem));
   /* width: max(50vw, 20ch); */
 }

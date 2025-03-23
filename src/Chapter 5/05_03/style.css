@@ -1,4 +1,4 @@
-/* Old School Clearfix */
+/* Classic Clearfix */
 /* *::after {
     content: "";
     display: block;
@@ -17,13 +17,13 @@
   padding: 0;
 }
 
-.demo-area ul::before {
-  content: "I'm a before pseudo-element";
-}
+/* .demo-area ul::before {
+    content: "I'm a before pseudo-element";
+} */
 
-.demo-area ul::after {
-  content: "I'm an after pseudo-element";
-}
+/* .demo-area ul::after {
+    content: "I'm an after pseudo-element";
+} */
 
 .demo-area li {
   display: block;

@@ -1,0 +1,39 @@
+.demo-area {
+  margin: 0 auto 5rem;
+  width: 70ch;
+}
+
+.main-nav {
+    position: sticky;
+    top: 0;
+}
+
+.main-nav ul {
+  background: white;
+  border: .5rem solid white;
+  display: flex;
+  gap: .5rem;
+  list-style-type: none;
+  margin: 1rem auto;
+  padding: 0;
+  width: 100%;
+}
+
+.main-nav li a {
+  background: hsl(236, 66%, 65%);
+  color: white;
+  display: block;
+  padding: .25rem .5rem;
+  text-decoration: none;
+}
+
+.footer-content {
+  background: hsl(236, 66%, 65%);
+  box-sizing: border-box;
+  color: white;
+  padding: 1rem;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}

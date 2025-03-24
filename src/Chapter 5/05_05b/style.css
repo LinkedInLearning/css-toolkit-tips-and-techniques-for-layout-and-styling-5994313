@@ -1,0 +1,100 @@
+:root {
+  --indent: 0;
+}
+
+@media screen and (min-width: 40rem) {
+  :root {
+    --indent: clamp(1.5rem, 4vw, 2.5rem);
+  }
+}
+
+.demo-area {
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+}
+
+.card {
+  margin: 2rem;
+  display: grid;
+  grid-template-columns: var(--indent) calc(2.5 * var(--indent)) 1fr 1fr calc(1 * var(--indent)) var(--indent);
+  grid-template-rows: var(--indent) calc(3 * var(--indent)) 1fr calc(2 * var(--indent)) var(--indent);
+  max-width: 40rem;
+
+  &::before {
+    background: hsl(36, 69%, 81%);
+    ;
+    box-shadow: 0 0 2rem hsla(0, 0%, 0%, 0.3);
+    content: "";
+    grid-column: 2/-1;
+    grid-row: 2/-1;
+  }
+
+  &::after {
+    background: hsl(36, 85%, 50%);
+    content: "";
+    grid-column: 1/-2;
+    grid-row: 1/-2;
+    z-index: -1;
+  }
+}
+
+.card img {
+  aspect-ratio: 1 / 1;
+  box-shadow: 0 0 1rem hsla(0, 0%, 0%, 0.3);
+  display: block;
+  grid-column: 4/5;
+  grid-row: 3/4;
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.card figcaption {
+  display: grid;
+  grid-column: 3/5;
+  grid-row: 3/4;
+  grid-template-columns: 3fr 1fr 2fr;
+  grid-template-rows: repeat(2, auto);
+
+  /* @supports(grid-template-columns: subgrid) {
+    grid-template-columns: subgrid;
+  } */
+
+  /* @supports(grid-template-rows: subgrid) {
+    grid-template-rows: subgrid;
+  } */
+}
+
+.card blockquote {
+  align-self: flex-end;
+  font-size: clamp(2rem, 2.5vw, 3rem);
+  font-weight: 100;
+  grid-column: 1/3;
+  grid-row: 1/2;
+  margin: 0;
+  padding-bottom: 1rem;
+
+  span {
+    background-color: hsl(36, 85%, 50%);
+    box-shadow: 10px 0 0px 0px hsl(36, 85%, 50%), -10px 0 0px 0px hsl(36, 85%, 50%);
+  }
+}
+
+.card cite {
+  font-size: 1.3rem;
+  font-weight: 100;
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+.card .credit {
+  color: white;
+  font-size: 80%;
+  font-weight: 100;
+  grid-column: 2/4;
+  grid-row: 2/3;
+  margin: 0;
+  padding: 1rem;
+  justify-self: end;
+}
